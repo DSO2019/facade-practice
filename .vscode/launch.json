@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GraduationParty",
+            "request": "launch",
+            "mainClass": "com.iteso.GraduationParty",
+            "projectName": "iteso"
+        }
+    ]
+}

@@ -1,28 +1,49 @@
 package mx.iteso.facade;
-
-import mx.iteso.facade.interfaces.*;
-
+import mx.iteso.facade.interfaces.Banquet;
+import mx.iteso.facade.interfaces.DanceFloor;
+import mx.iteso.facade.interfaces.DJ;
+import mx.iteso.facade.interfaces.DrinksBar;
+import mx.iteso.facade.interfaces.Lights;
+import mx.iteso.facade.interfaces.MusicBox;
+import mx.iteso.facade.interfaces.Photographer;
+import mx.iteso.facade.interfaces.Security;
+import mx.iteso.facade.interfaces.impl.Sepromex;
+/**graduation party facade. */
 public class GraduationPartyFacade {
+    /**banquet. */
     private Banquet banquet;
+    /**dance floor. */
     private DanceFloor danceFloor;
+    /**dj. */
     private DJ dj;
+    /**drinksbar. */
     private DrinksBar drinksBar;
+    /**lights. */
     private Lights lights;
+    /**musicbox. */
     private MusicBox musicBox;
+    /**photographer. */
     private Photographer photographer;
+    /**security. */
     private Security security;
-
-
+    /**graduation party facade constructor.
+     * @param mBanquet banquet.
+     * @param mDanceFloor dance floor.
+     * @param mDJ dj.
+     * @param mDrinksBar drinks bar.
+     * @param mLights lights.
+     * @param mMusicBox music box.
+     * @param mPhotographer photographer.
+    */
     public GraduationPartyFacade(
-        Banquet mBanquet,
-        DanceFloor mDanceFloor,
-        DJ mDJ,
-        DrinksBar mDrinksBar,
-        Lights mLights,
-        MusicBox mMusicBox,
-        Photographer mPhotographer,
-        Security mSecurity
-    ){
+        final Banquet mBanquet,
+        final DanceFloor mDanceFloor,
+        final DJ mDJ,
+        final DrinksBar mDrinksBar,
+        final Lights mLights,
+        final MusicBox mMusicBox,
+        final Photographer mPhotographer
+    ) {
         this.banquet = mBanquet;
         this.danceFloor = mDanceFloor;
         this.dj = mDJ;
@@ -30,10 +51,12 @@ public class GraduationPartyFacade {
         this.lights = mLights;
         this.musicBox = mMusicBox;
         this.photographer = mPhotographer;
-        this.security = mSecurity;
+        this.security = new Sepromex();
     }
-
-    public void startGraduationParty(String generation) {
+    /**start graduation party.
+     * @param generation generation.
+    */
+    public void startGraduationParty(final String generation) {
         System.out.println("Starting graduation party for " + generation);
         this.security.organizeSecurity();
         this.musicBox.loadAllSongs();
@@ -45,5 +68,4 @@ public class GraduationPartyFacade {
         //wait till 11 pm
         this.dj.changeSong();
     }
-
 }

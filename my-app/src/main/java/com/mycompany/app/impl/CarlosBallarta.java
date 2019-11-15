@@ -5,18 +5,21 @@ import com.mycompany.app.Comediante;
 /** CarlosBallarta.*/
 public class CarlosBallarta implements Comediante {
 
+    /**Start.*/
     @Override
-    void startStandUp() {
+    public void startStandUp() {
         System.out.println("Inicia Carlos Ballarta");
     }
 
+    /**Joke.*/
     @Override
-    void joke() {
+    public void joke() {
         System.out.println("Chiste");
     }
 
+    /**Finish.*/
     @Override
-    void finishStandUp() {
+    public void finishStandUp() {
         System.out.println("Termina Carlos Ballarta");
     }
 }

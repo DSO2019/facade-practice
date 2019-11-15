@@ -1,17 +1,24 @@
 package com.mycompany.app;
 
-import com.mycompany.app.*;
-import com.mycompany.app.impl.*;
+import com.mycompany.app.impl.CarlosBallarta;
+import com.mycompany.app.impl.DJ1;
+import com.mycompany.app.impl.Host;
+import com.mycompany.app.impl.Security;
+import com.mycompany.app.impl.TheStrokes;
+import com.mycompany.app.impl.TheVoidz;
+import com.mycompany.app.impl.Valet;
 
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
+/**Driver.*/
+final class App {
+
+    /** App.*/
+    private App() {
+
+    }
+    /**@param args .*/
+    public static void main(final String[] args) {
+        String[] songs1 = {"Song1", "Song2"};
         Comediante cb = new CarlosBallarta();
         DJ dj = new DJ1();
         Hostess host = new Host();
@@ -20,12 +27,14 @@ public class App
         Banda tv = new TheVoidz();
         ValetParking vp = new Valet();
 
-        GraduationFacade facade = new GraduationFacade(ts,sec,cb,dj,host,vp);
-        facade.startParty(["Song1","Song2"]);
+        GraduationFacade facade = new GraduationFacade(ts,
+            sec, cb, dj, host, vp);
+
+        facade.startParty(songs1);
         facade.finishParty();
 
-        facade = new GraduationFacade(tv,sec,cb,dj,host,vp);
-        facade.startParty(["Song1","Song2"]);
+        facade = new GraduationFacade(tv, sec, cb, dj, host, vp);
+        facade.startParty(songs1);
         facade.finishParty();
     }
 }

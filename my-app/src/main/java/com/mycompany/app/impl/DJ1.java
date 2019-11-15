@@ -4,18 +4,21 @@ import com.mycompany.app.DJ;
 
 /** DJ1.*/
 public class DJ1 implements DJ {
+    /**Start.*/
     @Override
-    void setUp() {
-        System.out.println( "Dj set up" );
+    public void setUp() {
+        System.out.println("Dj set up");
     }
 
+    /**Finish.*/
     @Override
-    void finish() {
-        System.out.println( "Dj finish" );
+    public void finish() {
+        System.out.println("Dj finish");
     }
 
+    /**@param song .*/
     @Override
-    void playSong(String song) {
+    public void playSong(final String song) {
         System.out.println("Playing" + song);
     }
 }

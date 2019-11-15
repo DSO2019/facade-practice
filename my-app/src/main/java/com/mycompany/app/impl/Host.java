@@ -4,13 +4,15 @@ import com.mycompany.app.Hostess;
 
 /** Host.*/
 public class Host implements Hostess {
+    /**Greet.*/
     @Override
-    void greet() {
+    public void greet() {
         System.out.println("Saludar a invitado");
     }
-    
+
+    /**Show Table.*/
     @Override
-    void showTable() {
+    public void showTable() {
         System.out.println("Guiar a la mesa ");
     }
 }

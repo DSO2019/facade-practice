@@ -4,18 +4,21 @@ import com.mycompany.app.Banda;
 
 /** TheVoidz.*/
 public class TheVoidz implements Banda {
+    /**Start.*/
     @Override
-    void setUp() {
-        System.out.println( "The Voidz set up" );
+    public void setUp() {
+        System.out.println("The Voidz set up");
     }
 
+    /**Finish.*/
     @Override
-    void finish() {
-        System.out.println( "The Voidz finish" );
+    public void finish() {
+        System.out.println("The Voidz finish");
     }
 
+    /**@param song .*/
     @Override
-    void playSong(String song) {
+    public void playSong(final String song) {
         System.out.println("Playing" + song);
     }
 }

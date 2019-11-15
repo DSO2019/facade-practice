@@ -4,8 +4,9 @@ import com.mycompany.app.Comida;
 
 /** Sopa.*/
 public class Sopa implements Comida {
+    /**Serve.*/
     @Override
-    void serveFood() {
+    public void serveFood() {
         System.out.println("Sirviendo sopa");
     }
 }

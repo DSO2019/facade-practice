@@ -4,13 +4,15 @@ import com.mycompany.app.ValetParking;
 
 /** Valet.*/
 public class Valet implements ValetParking {
+    /**Park.*/
     @Override
-    void parkCar() {
+    public void parkCar() {
         System.out.println("Estacionando coche");
     }
 
+    /**Return.*/
     @Override
-    void returnCar() {
+    public void returnCar() {
         System.out.println("Regresando coche");
     }
 }

@@ -4,8 +4,9 @@ import com.mycompany.app.Bouncer;
 
 /** Security.*/
 public class Security implements Bouncer {
+    /**Check List.*/
     @Override
-    void checkGuestList() {
+    public void checkGuestList() {
         System.out.println("Buscando en la lista de invitados");
     }
 }

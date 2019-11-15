@@ -1,8 +1,11 @@
 package implementaciones;
 
-public class CartondeCaguama implements Bebidas{
+/**
+ * clase CartondeCaguama.
+ */
+public class CartondeCaguama implements Bebidas {
     @Override
-    public void servirBebidas() {
+    public final void servirBebidas() {
         System.out.println("Pasame el carton completo");
     }
 }

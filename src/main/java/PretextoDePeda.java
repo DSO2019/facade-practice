@@ -1,9 +1,15 @@
 import implementaciones.*;
 
+/**
+ * interface PretextoDePeda.
+ */
 public class PretextoDePeda {
-    public void Ambiente(){
-        Bienvenida ComidaPisto = new FiestaGraduacion();
-        ComidaPisto.darBienvenida();
+    /**
+     *
+     */
+    public final void ambiente() {
+        Bienvenida comidaPisto = new FiestaGraduacion();
+        comidaPisto.darBienvenida();
 
 
         Brindis brindis = new BrindisMediaNoche();
@@ -13,8 +19,8 @@ public class PretextoDePeda {
         fotografias.tomarFotografias();
 
         Cena cena = new BirriaConArroz();
-        cena.Servir();
-        cena.VolveraServir();
+        cena.servir();
+        cena.volveraServir();
 
         Bebidas bebidas = new CartondeCaguama();
         bebidas.servirBebidas();

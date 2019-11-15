@@ -1,8 +1,11 @@
 package implementaciones;
 
-public class BrindisMediaNoche implements Brindis{
+/**
+ * clase BrindisMediaNoche.
+ */
+public class BrindisMediaNoche implements Brindis {
     @Override
-    public void hacerBrindis() {
+    public final void hacerBrindis() {
         System.out.println("brindemos por los que salimos");
     }
 }

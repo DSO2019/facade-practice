@@ -1,8 +1,11 @@
 package implementaciones;
 
-public class Botanas implements MesaDePostres{
+/**
+ * clase Botanas.
+ */
+public class Botanas implements MesaDePostres {
     @Override
-    public void servirPostes() {
+    public final void servirPostes() {
         System.out.println("Mesa con botanas");
     }
 }

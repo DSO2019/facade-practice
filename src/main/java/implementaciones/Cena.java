@@ -1,6 +1,16 @@
 package implementaciones;
 
+/**
+ * interface Cena.
+ */
 public interface Cena {
-    public void Servir();
-    public void VolveraServir();
+    /**
+     *
+     */
+     void servir();
+
+    /**
+     *
+     */
+    void volveraServir();
 }

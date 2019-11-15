@@ -2,6 +2,6 @@ package com.mycompany.app;
 
 /** Valet Parking.*/
 public interface ValetParking {
-    int parkCar();
+    void parkCar();
     void returnCar();
 }

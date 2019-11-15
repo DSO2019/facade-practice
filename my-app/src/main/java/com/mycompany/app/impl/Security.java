@@ -1,11 +1,11 @@
-package com.mycompany.app;
+package com.mycompany.app.impl;
 
 import com.mycompany.app.Bouncer;
 
-/** Bebidas.*/
+/** Security.*/
 public class Security implements Bouncer {
     @Override
-    void checkGuestList(String name) {
-        System.out.println("Buscando a " + name + " en la lista de invitados");
+    void checkGuestList() {
+        System.out.println("Buscando en la lista de invitados");
     }
 }

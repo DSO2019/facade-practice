@@ -2,7 +2,7 @@ package com.mycompany.app.impl;
 
 import com.mycompany.app.Banda;
 
-/** Banda.*/
+/** TheVoidz.*/
 public class TheVoidz implements Banda {
     @Override
     void setUp() {

@@ -1,17 +1,17 @@
 package com.mycompany.app.impl;
 
-import com.mycompany.app.Banda;
+import com.mycompany.app.DJ;
 
-/** TheStrokes.*/
-public class TheStrokes implements Banda {
+/** DJ1.*/
+public class DJ1 implements DJ {
     @Override
     void setUp() {
-        System.out.println( "The Strokes set up" );
+        System.out.println( "Dj set up" );
     }
 
     @Override
     void finish() {
-        System.out.println( "The Strokes finish" );
+        System.out.println( "Dj finish" );
     }
 
     @Override

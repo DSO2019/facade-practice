@@ -1,8 +1,8 @@
-package com.mycompany.app;
+package com.mycompany.app.impl;
 
 import com.mycompany.app.Bebidas;
 
-/** Bebidas.*/
+/** Vino.*/
 public class Vino implements Bebidas {
     @Override
     void serveDrink() {

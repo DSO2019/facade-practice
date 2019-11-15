@@ -25,4 +25,42 @@ public interface GraduationFacade {
         this.host = host1;
         this.valet = valet1;
     }
+
+    public startParty(String[] songs) {
+        System.out.println("Llegando a la graduación");
+        System.out.println();
+
+        valet.parkCar();
+        bouncer.checkGuestList();
+        host.greet();
+        host.showTable();
+        comic.startStandUp();
+        dj.setUp();
+        band.setUp();
+
+        food = new Sopa();
+        food.serveFood();
+
+        drinks = new Refresco();
+        drinks.serveDrink();
+
+        food = new Pollo();
+        food.serveFood();
+
+        drinks = new Vino();
+        drinks.serveDrink();
+
+        dj.playSong(songs[0]);
+        band.playSong(songs[1]);
+    }
+
+    public finishParty() {
+        
+        comic.finishStandUp();
+        dj.finish();
+        band.finish();
+        valet.returnCar();
+        System.out.println("Salir de la graduación");
+        
+    }
 }

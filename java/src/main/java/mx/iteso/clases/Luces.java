@@ -16,7 +16,6 @@ public class Luces implements mx.iteso.interfaces.Luces {
      * getLuces.
      * @return luces .
      */
-    @Override
     public String getLuces() {
         return "Las luces son:  " + luces;
     }
@@ -25,7 +24,6 @@ public class Luces implements mx.iteso.interfaces.Luces {
      * setLuces.
      * @param luces String
      */
-    @Override
     public void setLuces(final String luces) {
     this.luces = luces;
     }

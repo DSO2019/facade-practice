@@ -16,7 +16,6 @@ public class Mesas implements mx.iteso.interfaces.Mesas {
      * get Mesas.
      * @return string mesas.
      */
-    @Override
     public String getMesas() {
         return "Mesas de: " + mesas;
     }
@@ -25,7 +24,6 @@ public class Mesas implements mx.iteso.interfaces.Mesas {
      * set Mesas.
      * @param mesas String
      */
-    @Override
     public void setMesas(final String mesas) {
         this.mesas = mesas;
     }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.19">
+<file name="C:\Users\artur\Desktop\SD\repo\facade-practice\facade-practice\src\main\java\com\iteso\GraduationFacade.java">
+</file>
+<file name="C:\Users\artur\Desktop\SD\repo\facade-practice\facade-practice\src\main\java\com\iteso\interfaces\Catering.java">
+</file>
+<file name="C:\Users\artur\Desktop\SD\repo\facade-practice\facade-practice\src\main\java\com\iteso\interfaces\Chairs.java">
+</file>
+<file name="C:\Users\artur\Desktop\SD\repo\facade-practice\facade-practice\src\main\java\com\iteso\interfaces\Clown.java">
+</file>
+<file name="C:\Users\artur\Desktop\SD\repo\facade-practice\facade-practice\src\main\java\com\iteso\interfaces\Florist.java">
+</file>
+<file name="C:\Users\artur\Desktop\SD\repo\facade-practice\facade-practice\src\main\java\com\iteso\interfaces\Invitations.java">
+</file>
+<file name="C:\Users\artur\Desktop\SD\repo\facade-practice\facade-practice\src\main\java\com\iteso\interfaces\Music.java">
+</file>
+<file name="C:\Users\artur\Desktop\SD\repo\facade-practice\facade-practice\src\main\java\com\iteso\interfaces\Venue.java">
+</file>
+</checkstyle>

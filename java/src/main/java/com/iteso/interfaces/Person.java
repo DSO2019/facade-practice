@@ -2,9 +2,11 @@ package com.iteso.interfaces;
 
 /** Person interface. */
 public interface Person {
-    /** Get name method. */
+    /** Get name method.
+     * @return name.
+    */
     String getName();
-    
+
     /** Eat method.
      * @param food food.
      */

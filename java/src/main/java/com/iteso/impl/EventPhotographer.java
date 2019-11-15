@@ -9,7 +9,9 @@ public class EventPhotographer implements Photographer {
     /** Name attribute. */
     private String name;
 
-    /** Constructor. */
+    /** Constructor.
+     * @param newName name.
+    */
     public EventPhotographer(final String newName) {
         this.name = newName;
     }
@@ -24,7 +26,7 @@ public class EventPhotographer implements Photographer {
     /** Take photos method.
      * @param person person.
      */
-    public void takePhotos(Person person) {
-        System.out.println("Take photos to " + person.getName());        
+    public void takePhotos(final Person person) {
+        System.out.println("Take photos to " + person.getName());
     }
 }

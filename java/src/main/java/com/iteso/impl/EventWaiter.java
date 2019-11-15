@@ -9,7 +9,9 @@ public class EventWaiter implements Waiter {
     /** Name attribute. */
     private String name;
 
-    /** Constructor. */
+    /** Constructor.
+     * @param newName name.
+    */
     public EventWaiter(final String newName) {
         this.name = newName;
     }
@@ -22,7 +24,6 @@ public class EventWaiter implements Waiter {
     }
 
     /** Serve method.
-     * @param person person.
      */
     public void serve() {
         System.out.println("Serve to all people in the event");

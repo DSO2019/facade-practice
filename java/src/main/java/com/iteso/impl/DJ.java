@@ -9,7 +9,9 @@ public class DJ implements Music {
     /** Name attribute. */
     private String name;
 
-    /** Constructor. */
+    /** Constructor.
+     * @param newName name.
+    */
     public DJ(final String newName) {
         this.name = newName;
     }

@@ -9,7 +9,9 @@ public class LedLight implements Light {
     /** Name attribute. */
     private String name;
 
-    /** Constructor. */
+    /** Constructor.
+     * @param newName name.
+    */
     public LedLight(final String newName) {
         this.name = newName;
     }
@@ -21,10 +23,12 @@ public class LedLight implements Light {
         return this.name;
     }
 
+    /** On. */
     public void on() {
         System.out.println("Turning on lights: " + this.name);
     }
 
+    /** Off. */
     public void off() {
         System.out.println("Turning off lights: " + this.name);
     }

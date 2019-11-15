@@ -9,7 +9,9 @@ public class Ron implements Drink {
     /** Name attribute. */
     private String name;
 
-    /** Constructor. */
+    /** Constructor.
+     * @param newName name.
+    */
     public Ron(final String newName) {
         this.name = newName;
     }
@@ -21,6 +23,7 @@ public class Ron implements Drink {
         return this.name;
     }
 
+    /** Serve. */
     public void serve() {
         System.out.println("Serving Ron: " + this.name);
     }

@@ -9,14 +9,15 @@ public class GlassStage implements Stage {
     /** Name attribute. */
     private String name;
 
-    /** Constructor. */
+    /** Constructor.
+     * @param newName name.
+    */
     public GlassStage(final String newName) {
         this.name = newName;
     }
 
     /**
      * Return name.
-     * 
      * @return name.
      */
     public String getName() {
@@ -27,7 +28,7 @@ public class GlassStage implements Stage {
      * Dance method.
      * @param incomingPeople peoplle.
      */
-    public void dance(Person incomingPeople) {
+    public void dance(final Person incomingPeople) {
         System.out.println(incomingPeople.getName() + "is dancing");
     }
 

@@ -11,7 +11,9 @@ public class Graduate implements Person {
     /** Name attribute. */
     private String name;
 
-    /** Constructor. */
+    /** Constructor.
+     * @param newName name.
+    */
     public Graduate(final String newName) {
         this.name = newName;
     }
@@ -26,14 +28,14 @@ public class Graduate implements Person {
     /** Eat method.
      * @param food food.
      */
-    public void eat(Food food) {
+    public void eat(final Food food) {
         System.out.println("Eating " + food.getName());
     }
 
     /** Drink method.
      * @param drink drink.
      */
-    public void drink(Drink drink) {
+    public void drink(final Drink drink) {
         System.out.println("Drinking " + drink.getName());
     }
 }

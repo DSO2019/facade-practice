@@ -9,7 +9,9 @@ public class Meat implements Food {
     /** Name attribute. */
     private String name;
 
-    /** Constructor. */
+    /** Constructor.
+     * @param newName name.
+    */
     public Meat(final String newName) {
         this.name = newName;
     }
@@ -21,6 +23,7 @@ public class Meat implements Food {
         return this.name;
     }
 
+    /** Serve. */
     public void serve() {
         System.out.println("Serving Meat: " + this.name);
     }
